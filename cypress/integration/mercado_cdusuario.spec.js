@@ -12,5 +12,12 @@ describe('Testes Front Mercado Online - CADASTRO DE USUARIO', () => {
             MercadoOnlineCadastrarUsuario.acessarCadastro()
             MercadoOnlineCadastrarUsuario.verificarCadastroPessoaFisica()
         })
+        it('Deve verificar se os campos para cadastro de pessoa jurídica estão adequados', () => {
+            MercadoOnlineCadastrarUsuario.acessarCadastro()
+            MercadoOnlineCadastrarUsuario.verificarCadastroPessoaJuridica()
+        })
+        it('Deve realizar o cadastro de uma pessoa física', () => {
+            MercadoOnlineCadastrarUsuario.cadastroUsuarioFisico()
+        })
     })
 })
