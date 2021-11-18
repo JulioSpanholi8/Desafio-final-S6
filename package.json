@@ -1,0 +1,34 @@
+{
+  "name": "Desafio-final-S6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cy:run": "cypress run",
+    "cy:open": "cypress open --config watchForFileChanges=false",
+    "report:merge": "mochawesome-merge cypress/report/mochawesome-report/*.json > cypress/report/output.json",
+    "report:generate": "marge cypress/report/output.json --reportDir ./ --inline",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JulioSpanholi8/Desafio-final-S6.git"
+  },
+  "keywords": [],
+  "author": "Júlio César Spanholi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JulioSpanholi8/Desafio-final-S6/issues"
+  },
+  "homepage": "https://github.com/JulioSpanholi8/Desafio-final-S6#readme",
+  "devDependencies": {
+    "cypress": "^9.0.0",
+    "mochawesome": "^7.0.1",
+    "mochawesome-merge": "^4.2.0",
+    "mochawesome-report-generator": "^6.0.1"
+  },
+  "dependencies": {
+    "faker": "^5.5.3",
+    "faker-br": "^0.4.1"
+  }
+}
