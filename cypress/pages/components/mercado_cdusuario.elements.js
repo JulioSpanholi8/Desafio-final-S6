@@ -4,15 +4,15 @@ export const CADASTRAR = {
     TXT_CADASTRO        : '.board > .color',
     IMG_SEGURO          : '.Seguro',
 
-    INP_NOMECOMPLETO    : '#pf_nome_cliente',
+    INP_NOME            : '#pf_nome_cliente',
     INP_NASCIMENTO      : '#pf_data_nascimento',
     INP_CPF             : '#pf_cpf_cliente',
-    INP_TELEFONE_FIXO   : '#telefone_cliente',
+    INP_TELEFONE        : '#telefone_cliente',
     INP_CELULAR         : '#telefone_cliente_2',
     INP_EMAIL           : '#email_cliente',
-    INP_REPITA_EMAIL    : '#email_cliente2',
+    INP_EMAIL2          : '#email_cliente2',
     INP_SENHA           : '#senha_cliente',
-    INP_REPITA_SENHA    : '#senha_cliente2',
+    INP_SENHA2          : '#senha_cliente2',
     
     BTN_AVANCAR         : '.botao-commerce',
 
@@ -21,7 +21,9 @@ export const CADASTRAR = {
     INP_RAZAOSOCIAL     : '#razao_social',
     INP_IE              : '#ie',
     INP_CNPJ            : '#cnpj',
-    INP_NOME_CLIENTE    : '#pj_nome_cliente',
-    INP_NASCIMENTO_PJ   : '#pj_data_nascimento',
-    INP_CPF_PJ          : '#pj_cpf_cliente',
+    INP_NOMECLIENTE     : '#pj_nome_cliente',
+    INP_NASCIMENTOPJ    : '#pj_data_nascimento',
+    INP_CPFPJ           : '#pj_cpf_cliente',
+
+    TXT_ERROCPF         : '#pf_cpf_cliente_erro'
 }

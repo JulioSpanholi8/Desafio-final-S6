@@ -14,7 +14,6 @@
     "type": "git",
     "url": "git+https://github.com/JulioSpanholi8/Desafio-final-S6.git"
   },
-  "keywords": [],
   "author": "Júlio César Spanholi",
   "license": "ISC",
   "bugs": {
@@ -29,6 +28,7 @@
   },
   "dependencies": {
     "faker": "^5.5.3",
-    "faker-br": "^0.4.1"
+    "faker-br": "^0.4.1",
+    "js-brasil": "^2.5.1"
   }
 }

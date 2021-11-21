@@ -1,8 +1,7 @@
 import Base from './_base.page'
-
 import {LOGIN as LG} from './components/mercado_login.elements'
 
-export default class MercadoOnlineLogin extends Base {
+export default class MOLogin extends Base {
     static acessarMercadoOnline(){
         cy.visit(`${Cypress.env('baseURL_front')}`)
     }
