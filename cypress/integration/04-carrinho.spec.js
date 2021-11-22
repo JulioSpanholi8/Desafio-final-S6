@@ -7,11 +7,15 @@ describe('Testes Front Mercado Online - CARRINHO', () => {
     describe('Testes de carrinho/Positivos', () => {
         beforeEach(() => {
             MOLogin.acessarMercadoOnline()
-            MOLogin.acessarLogin()
             MOLogin.realizarLogin()
         })
         it('Deve adicionar itens ao carrinho e realizar validações no modal com sucesso', () => {
             MOCarrinho.adicionarItemCarrinho()
+            MOCarrinho.modalCarrinho()
+        })
+        it('Deve adicionar itens ao carrinho e realizar validações na página do carrinho com sucesso', () => {
+            MOCarrinho.adicionarItemCarrinho()
+            MOCarrinho.paginaCarrinho()
         })
     })  
 })
