@@ -40,7 +40,7 @@ export default class MOCadastrarUsuario extends Base {
     }
     static cadastroPessoaFisica(){
         autFixtures.usuarioValido()
-        cy.readFile(`../fixtures/userValido.json`).then((usuarioNovo) => {
+        cy.readFile(`cypress/fixtures/cadastro_usuario/userValido.json`).then((usuarioNovo) => {
             super.typeValue(CD.INP_NOME, usuarioNovo.valido.nome)
             super.typeValue(CD.INP_NASCIMENTO, usuarioNovo.valido.nascimento)
             super.typeValue(CD.INP_CPF, usuarioNovo.valido.cpf)
@@ -59,7 +59,7 @@ export default class MOCadastrarUsuario extends Base {
 
     static campoCpfInvalido(){
         autFixtures.usuarioInvalido()
-        cy.readFile(`../fixtures/userInvalido.json`).then((usuarioNovo) => {
+        cy.readFile(`cypress/fixtures/cadastro_usuario/userInvalido.json`).then((usuarioNovo) => {
             super.typeValue(CD.INP_NOME, usuarioNovo.invalido.nome)
             super.typeValue(CD.INP_NASCIMENTO, usuarioNovo.invalido.nascimento)
             super.typeValue(CD.INP_CPF, usuarioNovo.invalido.cpf)
