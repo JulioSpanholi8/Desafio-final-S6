@@ -6,5 +6,11 @@ export const LOGIN = {
     BTN_LOGIN       : 'p > .botao-commerce',
     INP_IDENTIFICAR : '.tray-container',
     BTN_CONTINUE    : '#tray-login-identify',
-    BTN_FACEBOOK    : '.tray-btn-facebook'
+    BTN_FACEBOOK    : '.tray-btn-facebook',
+
+    INP_EMAIL       : '#input-email',
+    INP_SENHA       : '#input-password',
+    BTN_LOGAR       : '#password-submit',
+
+    TXT_ERROR       : '.tray-error-message'
 }

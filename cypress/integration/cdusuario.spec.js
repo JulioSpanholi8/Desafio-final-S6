@@ -1,15 +1,12 @@
 /// <reference types="cypress" />
 
-import autFixtures from '../pages/autFixtures'
 import MOLogin from '../pages/mercado_login.page'
 import MOCadastrarUsuario from '../pages/mercado_cdusuario.page'
 
 describe('Testes Front Mercado Online - CADASTRO DE USUARIO', () => {
     describe('Testes cadastro de usuário/Positivos', () => {
-        before(() => {
-            MOLogin.acessarMercadoOnline()
-        })
         it('Deve verificar se os campos para cadastro de pessoa jurídica estão adequados', () => {
+            MOLogin.acessarMercadoOnline()
             MOCadastrarUsuario.acessarCadastro()
             MOCadastrarUsuario.verificarCadastroPessoaJuridica()
         })
@@ -21,6 +18,8 @@ describe('Testes Front Mercado Online - CADASTRO DE USUARIO', () => {
             MOCadastrarUsuario.cadastroPessoaFisica()
         })
     })
+
+    /****************************************************************************/
 
     describe('Testes cadastro de usuário/Negativos', () => {
         it('Deve realizar o cadastro de uma pessoa com cpf inválido', () => {

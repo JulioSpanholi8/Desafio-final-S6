@@ -1,11 +1,11 @@
-import Base from './_base.page'
+import Base from '../pages/_base.page'
 import faker from "faker"
 import fakerbr from "faker-br"
 const {fakerBr} = require('js-brasil');
 
 export default class autFixtures extends Base {
     static usuarioValido() {
-      cy.writeFile('cypress/fixtures/userValido.json', {
+      cy.writeFile('../fixtures/userValido.json', {
           'valido' :
           {
             "nome": `${fakerbr.name.firstName()} ${fakerbr.name.lastName()}`,
@@ -19,7 +19,7 @@ export default class autFixtures extends Base {
       })
     }
     static usuarioInvalido() {
-      cy.writeFile('cypress/fixtures/userInvalido.json',  {
+      cy.writeFile('../fixtures/userInvalido.json',  {
         'invalido' :
         {
           "nome": `${fakerbr.name.firstName()} ${fakerbr.name.lastName()}`,
