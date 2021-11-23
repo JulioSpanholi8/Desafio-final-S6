@@ -7,26 +7,26 @@ export default class autFixtures extends Base {
     static usuarioValido() {
       cy.writeFile('cypress/fixtures/cadastro_usuario/userValido.json', {
           'valido' : {
-            "nome": `${fakerbr.name.firstName()} ${fakerbr.name.lastName()}`,
+            "nome"      : `${fakerbr.name.firstName()} ${fakerbr.name.lastName()}`,
             "nascimento": `${fakerBr.data()}`,
-            "cpf": `${fakerBr.cpf()}`,
-            "telefone": `${fakerBr.telefone()}`,
-            "celular": `${fakerBr.celular()}`,
-            "email": `${fakerbr.internet.email()}`,
-            "senha": `${faker.internet.password()}`
+            "cpf"       : `${fakerBr.cpf()}`,
+            "telefone"  : `${fakerBr.telefone()}`,
+            "celular"   : `${fakerBr.celular()}`,
+            "email"     : `${fakerbr.internet.email()}`,
+            "senha"     : `${faker.internet.password()}`
           }
       })
     }
     static usuarioInvalido() {
       cy.writeFile('cypress/fixtures/cadastro_usuario/userInvalido.json',  {
         'invalido' : {
-          "nome": `${fakerbr.name.firstName()} ${fakerbr.name.lastName()}`,
+          "nome"      : `${fakerbr.name.firstName()} ${fakerbr.name.lastName()}`,
           "nascimento": `${fakerBr.data()}`,
-          "cpf":  `${fakerBr.telefone()}`,
-          "telefone": `${fakerBr.telefone()}`,
-          "celular": `${fakerBr.celular()}`,
-          "email": `${fakerbr.internet.email()}`,
-          "senha": `${faker.internet.password()}` 
+          "cpf"       : `${fakerBr.telefone()}`,
+          "telefone"  : `${fakerBr.telefone()}`,
+          "celular"   : `${fakerBr.celular()}`,
+          "email"     : `${fakerbr.internet.email()}`,
+          "senha"     : `${faker.internet.password()}` 
         }
       })
     }

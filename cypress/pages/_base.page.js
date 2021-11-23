@@ -88,7 +88,7 @@ export default class Base {
       cy.get(array).first().should('contain', value)
   }
 
-  static verifyUrl(url) {
+  static validarUrl(url) {
       cy.url().should('include', url)
   }
   

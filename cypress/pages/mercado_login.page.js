@@ -5,13 +5,16 @@ export default class MOLogin extends Base {
     static acessarMercadoOnline(){
         cy.visit('/')
     }
-    static realizarLogin(){
+    static verificarLogin(){
         super.verifyElement(LG.BTN_ENTRAR)
         super.clickOnElement(LG.BTN_ENTRAR)
-        super.verifyUrl(LG.URL)
         super.validateElementText(LG.TXT_LOGIN, 'Já sou cadastrado')
         super.validateElementText(LG.TXT_AUTENTICAR, 'Informe seu e-mail ou CPF/CNPJ para se autenticar.')
         super.verifyElement(LG.BTN_LOGIN)
+    }
+    static realizarLogin(){
+        super.clickOnElement(LG.BTN_ENTRAR)
+        super.validarUrl(LG.URL)
         super.clickOnElement(LG.BTN_LOGIN)
         cy.fixture(`../fixtures/cadastro_usuario/userValido`).then((usuarioNovo) => {
             super.typeValue(LG.INP_EMAIL, usuarioNovo.valido.email)
@@ -41,6 +44,6 @@ export default class MOLogin extends Base {
         })
         super.verifyElement(LG.BTN_LOGAR)
         super.clickOnElement(LG.BTN_LOGAR)
-        super.verifyUrl('/central-do-cliente')
+        super.validarUrl('/central-do-cliente')
     }
 }

@@ -8,6 +8,7 @@ describe('Testes Front Mercado Online - LOGIN', () => {
             MOLogin.acessarMercadoOnline()
         })
         it('Deve realizar login no sistema com sucesso', () => {
+            MOLogin.verificarLogin()
             MOLogin.realizarLogin()
         })
     })

@@ -21,7 +21,7 @@ export default class MOCarrinho extends Base {
         super.verifyElement(MODAL.BTN_LIMPARCART)
         cy.wait(2000)
         super.clickOnElement(MODAL.BTN_FINALIZAR)
-        super.verifyUrl('/checkout/cart')
+        super.validarUrl('/checkout/cart')
     }
     static paginaCarrinho(){
         super.verifyElement(PC.DADOS_SEGUROS)

@@ -12,5 +12,5 @@ describe('Testes Front Mercado Online - CADASTRAO DE ENDERECOS', () => {
         it('Deve adicionar um endereco com sucesso', () => {
             MOCadastrarEnderecos.cadastroEndereco()
         })
-    }) 
+    })
 })

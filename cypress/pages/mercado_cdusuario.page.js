@@ -8,7 +8,7 @@ export default class MOCadastrarUsuario extends Base {
     static acessarCadastro(){
         super.verifyElement(CD.BTN_CADASTRO)
         super.clickOnElement(CD.BTN_CADASTRO)
-        super.verifyUrl(CD.URL)
+        super.validarUrl(CD.URL)
         super.validateElementText(CD.TXT_CADASTRO, 'Cadastro de novo cliente')
         super.verifyElement(CD.IMG_SEGURO)
     }
@@ -61,7 +61,7 @@ export default class MOCadastrarUsuario extends Base {
                 this.cadastroPessoaFisica()
             }
         })
-        super.verifyUrl('/loja')
+        super.validarUrl('/loja')
     }
 
     /****************************************************************************/
