@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 
-import MOLogin from '../pages/mercado_login.page'
 import MOCadastrarUsuario from '../pages/mercado_cdusuario.page'
+import MOLogin from '../pages/mercado_login.page'
 
 describe('Testes Front Mercado Online - CADASTRO DE USUARIO', () => {
     describe('Testes cadastro de usuário/Positivos', () => {
@@ -17,6 +17,7 @@ describe('Testes Front Mercado Online - CADASTRO DE USUARIO', () => {
         })
         it('Deve realizar o cadastro de uma pessoa física com sucesso', () => {
             MOCadastrarUsuario.cadastroPessoaFisica()
+            cy.wait(5000)
         })
     })
 

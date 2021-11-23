@@ -1,30 +1,35 @@
 import Base from './_base.page'
 import {CARRINHO as CART} from './components/mercado_carrinho.elements'
+import {MODAL} from './components/mercado_carrinho.elements'
+import {PAGECART as PC} from './components/mercado_carrinho.elements'
 
 export default class MOCarrinho extends Base {
     static adicionarItemCarrinho() {
-        super.clickOnElement(CART.IMG_LOGO)
-        super.validarElemento(CART.ADD_PRODUTO1)
+        super.verifyElement(CART.ADD_PRODUTO1)
         super.clickOnElement(CART.ADD_PRODUTO1)
-        super.validarElemento(CART.ADD_PRODUTO2)
+        super.verifyElement(CART.ADD_PRODUTO2)
         super.clickOnElement(CART.ADD_PRODUTO2) 
     }
     static modalCarrinho(){
-        super.validarElemento(CART.CART_MODAL)
-        super.clickOnElement(CART.CART_MODAL)
-        super.validarElemento(CART.BUSCAR_CART)
-        super.validarElemento(CART.CART_PEDIDO1)
-        super.validarElemento(CART.CART_PEDIDO2)
-        super.validarElemento(CART.TOTAL_CART)
-        super.validarElemento(CART.BTN_FINALIZAR)
-        super.validarElemento(CART.BTN_LIMPARCART)
+        super.verifyElement(MODAL.CART_MODAL)
+        super.clickOnElement(MODAL.CART_MODAL)
+        super.verifyElement(MODAL.BUSCAR_CART)
+        super.verifyElement(MODAL.CART_PEDIDO1)
+        super.verifyElement(MODAL.CART_PEDIDO2)
+        super.verifyElement(MODAL.TOTAL_CART)
+        super.verifyElement(MODAL.BTN_FINALIZAR)
+        super.verifyElement(MODAL.BTN_LIMPARCART)
+        cy.wait(2000)
+        super.clickOnElement(MODAL.BTN_FINALIZAR)
+        super.verifyUrl('/checkout/cart')
     }
     static paginaCarrinho(){
-        super.clickOnElement(CART.CART_MODAL)
-        //super.clickOnElement(CART.BTN_FINALIZAR)
-        //super.validarElemento(CART.DADOS_SEGUROS)
-        //super.validarElemento(CART.RESUMO_CART)
-        //super.validarElemento(CART.CEP_CART)
-        //super.validarElemento(CART.BTN_CONTINUAR)
+        super.verifyElement(PC.DADOS_SEGUROS)
+        super.verifyElement(PC.QUANTIDADE)
+        super.verifyElement(PC.TXT_PRODUTO)
+        super.verifyElement(PC.PRECO_CART)
+        super.verifyElement(PC.RESUMO_CART)
+        super.verifyElement(PC.CEP_CART)
+        super.verifyElement(PC.BTN_CONTINUAR)
     }
 }
