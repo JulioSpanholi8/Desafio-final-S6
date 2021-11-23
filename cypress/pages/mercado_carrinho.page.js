@@ -5,6 +5,7 @@ import {PAGECART as PC} from './components/mercado_carrinho.elements'
 
 export default class MOCarrinho extends Base {
     static adicionarItemCarrinho() {
+        cy.visit('/loja/')
         super.verifyElement(CART.ADD_PRODUTO1)
         super.clickOnElement(CART.ADD_PRODUTO1)
         super.verifyElement(CART.ADD_PRODUTO2)
