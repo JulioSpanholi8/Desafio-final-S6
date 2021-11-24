@@ -9,9 +9,6 @@ describe('Testes Front Mercado Online - CADASTRO DE USUARIO', () => {
             MOLogin.acessarMercadoOnline()
             MOCadastrarUsuario.acessarCadastro()
         })
-        it('Deve verificar se os campos para cadastro de pessoa jurídica estão adequados', () => {
-            MOCadastrarUsuario.verificarCadastroPessoaJuridica()
-        })
         it('Deve verificar se os campos para cadastro de pessoa física estão adequados', () => {
             MOCadastrarUsuario.verificarCadastroPessoaFisica()
         })

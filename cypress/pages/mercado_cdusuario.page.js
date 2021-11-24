@@ -2,7 +2,6 @@ import Base from './_base.page'
 import autFixtures from '../dynamics/autFixtures'
 import {CADASTRAR as CD} from './components/mercado_cdusuario.elements'
 import {CDFISICA as CF} from './components/mercado_cdusuario.elements'
-import {CDJURIDICA as CJ} from './components/mercado_cdusuario.elements'
 
 export default class MOCadastrarUsuario extends Base {
     static acessarCadastro(){
@@ -16,22 +15,6 @@ export default class MOCadastrarUsuario extends Base {
         super.verifyElement(CF.INP_NOME)
         super.verifyElement(CF.INP_NASCIMENTO)
         super.verifyElement(CF.INP_CPF)
-        super.verifyElement(CF.INP_TELEFONE)
-        super.verifyElement(CF.INP_CELULAR)
-        super.verifyElement(CF.INP_EMAIL)
-        super.verifyElement(CF.INP_EMAIL2)
-        super.verifyElement(CF.INP_SENHA)
-        super.verifyElement(CF.INP_SENHA2)
-        super.verifyElement(CD.BTN_AVANCAR)
-    }
-    static verificarCadastroPessoaJuridica(){
-        super.clickOnElement(CJ.BTN_JURIDICA)
-        super.verifyElement(CJ.INP_RAZAOSOCIAL)
-        super.verifyElement(CJ.INP_IE)
-        super.verifyElement(CJ.INP_CNPJ)
-        super.verifyElement(CJ.INP_NOMECLIENTE)
-        super.verifyElement(CJ.INP_NASCIMENTOPJ)
-        super.verifyElement(CJ.INP_CPFPJ)
         super.verifyElement(CF.INP_TELEFONE)
         super.verifyElement(CF.INP_CELULAR)
         super.verifyElement(CF.INP_EMAIL)

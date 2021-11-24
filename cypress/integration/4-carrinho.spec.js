@@ -13,5 +13,13 @@ describe('Testes Front Mercado Online - CARRINHO', () => {
             MOCarrinho.modalCarrinho()
             MOCarrinho.paginaCarrinho()
         })
-    })  
+    })
+    describe('Testes de carrinho/Negativos', () => {
+        beforeEach(() => {
+            MOLogin.acessarMercadoOnline()
+        })
+        it('Deve adicionar itens ao carrinho e inserir um CEP inválido no frete', () => {
+            MOCarrinho.compraCepInvalido()
+        })
+    })    
 })

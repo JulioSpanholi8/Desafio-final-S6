@@ -33,4 +33,18 @@ export default class MOCarrinho extends Base {
         super.verifyElement(PC.CEP_CART)
         super.verifyElement(PC.BTN_CONTINUAR)
     }
+
+    /****************************************************************************/
+
+    static compraCepInvalido(){
+        cy.visit('/loja/')
+        super.clickOnElement(CART.ADD_PRODUTO1)
+        super.clickOnElement(MODAL.CART_MODAL)
+        cy.wait(2000)
+        super.clickOnElement(MODAL.BTN_FINALIZAR)
+        super.validarUrl('/checkout/cart')
+        cy.wait(2000)
+        super.typeValue(PC.CEP_CART, "00000-001")
+        super.validateElementText(PC.TXT_ERROCEP, 'Não foi possível carregar seu endereço.Verifique o CEP e digite novamente.')
+    }
 }

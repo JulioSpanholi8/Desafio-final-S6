@@ -30,4 +30,12 @@ export default class autFixtures extends Base {
         }
       })
     }
+    static numeroEndereco(){
+      cy.writeFile('cypress/fixtures/cadastro_endereco/endereco.json',  {
+        'valido' : {
+          "cep"     : "30130-003",
+          "numero"  : `${faker.datatype.number()}`
+        }
+      })
+    }
 }

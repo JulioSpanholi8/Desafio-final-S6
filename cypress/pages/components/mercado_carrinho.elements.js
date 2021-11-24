@@ -21,5 +21,6 @@ export const PAGECART = {
     TXT_PRODUTO     : '.ch-cart-product-name',
     CEP_CART        : '#cart-shipping',
     RESUMO_CART     : '.col-sm-6',
-    BTN_CONTINUAR   : '.hidden-xs > .btn-next-step'
+    BTN_CONTINUAR   : '.hidden-xs > .btn-next-step',
+    TXT_ERROCEP     : '.ch-message-invalid'
 }

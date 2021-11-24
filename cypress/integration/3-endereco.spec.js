@@ -13,4 +13,13 @@ describe('Testes Front Mercado Online - CADASTRAO DE ENDERECOS', () => {
             MOCadastrarEnderecos.cadastroEndereco()
         })
     })
+    describe('Testes cadastro de enderecos/Negativos', () => {
+        beforeEach(() => {
+            MOLogin.acessarMercadoOnline()  
+            MOLogin.realizarLogin() 
+        })
+        it('Deve adicionar um endereco com cep invalido', () => {
+            MOCadastrarEnderecos.cadastroEnderecoInvalido()
+        })
+    })
 })

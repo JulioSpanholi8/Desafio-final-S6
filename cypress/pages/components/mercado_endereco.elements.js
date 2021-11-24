@@ -10,5 +10,5 @@ export const ENDERECO = {
     CARREGAR            : '.container.app__container',
     BTN_SALVAR          : '.app__button.app__button--primary.app__button--no-margin',
     TXT_SUCESSO         : '.alert > span',
-    TXT_ERROR           : '.alert > span'
+    TXT_ERROR           : '.alert > span',
 }
