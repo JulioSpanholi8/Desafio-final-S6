@@ -37,7 +37,8 @@ export default class autFixtures extends Base {
         'valido' : 
         {
           "cep"     : "30130-003",
-          "numero"  : `${faker.datatype.number()}`
+          "numero"  : `${faker.datatype.number()}`,
+          "rua"     : "Avenida Afonso Pena"
         }
       })
     }

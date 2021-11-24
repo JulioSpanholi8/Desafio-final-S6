@@ -34,7 +34,7 @@ export default class MOCadastrarEnderecos extends Base {
     static cadastroEnderecoInvalido(){
         cy.wait(2000)
         super.clickOnElement(ED.MENU_CONTA, 3)
-        cy.wait(2000)
+        cy.wait(4000)
         super.clickOnElement(ED.MENU_CONTA, 3)
         super.clickOnElement(ED.BTN_EDITAR, 0)
         cy.wait(2000)

@@ -12,11 +12,21 @@ describe('Testes Front Mercado Online - CHECKOUT', () => {
             MOCarrinho.adicionarItemCarrinho()
         })
         it('Deve adicionar itens ao carrinho e realizar checkout com sucesso', () => {
+            MOCheckout.finalizarCompra()
             MOCheckout.realizarCheckout()
         })
     })
 
     /****************************************************************************/
 
-    
+    describe('Testes de checkout/Negativos', () => {
+        beforeEach(() => {
+            MOLogin.acessarMercadoOnline()
+            MOLogin.realizarLogin()
+            MOCarrinho.adicionarItemCarrinho()
+        })
+        it('Deve adicionar itens ao carrinho e inserir email inexistente no checkout', () => {
+            MOCheckout.emailInexistente()
+        })
+    })
 })
