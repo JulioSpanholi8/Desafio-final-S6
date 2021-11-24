@@ -23,7 +23,7 @@ export default class MOCadastrarUsuario extends Base {
         super.verifyElement(CF.INP_SENHA2)
         super.verifyElement(CD.BTN_AVANCAR)
     }
-    static cadastroPessoaFisica(){
+    static realizarCadastroPessoaFisica(){
         autFixtures.usuarioValido()
         cy.readFile(`cypress/fixtures/cadastro_usuario/userValido.json`).then((usuarioNovo) => {
             super.typeValue(CF.INP_NOME, usuarioNovo.valido.nome)
@@ -41,7 +41,7 @@ export default class MOCadastrarUsuario extends Base {
         cy.url().then((url) => {
             if (url.includes('/cadastro')) {
                 cy.reload()
-                this.cadastroPessoaFisica()
+                this.realizarCadastroPessoaFisica()
             }
         })
         super.validarUrl('/loja')

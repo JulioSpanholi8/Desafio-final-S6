@@ -14,6 +14,9 @@ describe('Testes Front Mercado Online - CARRINHO', () => {
             MOCarrinho.paginaCarrinho()
         })
     })
+
+    /****************************************************************************/
+
     describe('Testes de carrinho/Negativos', () => {
         beforeEach(() => {
             MOLogin.acessarMercadoOnline()

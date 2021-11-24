@@ -13,7 +13,7 @@ describe('Testes Front Mercado Online - CADASTRO DE USUARIO', () => {
             MOCadastrarUsuario.verificarCadastroPessoaFisica()
         })
         it('Deve realizar o cadastro de uma pessoa física com sucesso', () => {
-            MOCadastrarUsuario.cadastroPessoaFisica()
+            MOCadastrarUsuario.realizarCadastroPessoaFisica()
             cy.wait(5000)
         })
     })

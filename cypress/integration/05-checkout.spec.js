@@ -14,5 +14,9 @@ describe('Testes Front Mercado Online - CHECKOUT', () => {
         it('Deve adicionar itens ao carrinho e realizar checkout com sucesso', () => {
             MOCheckout.realizarCheckout()
         })
-    })  
+    })
+
+    /****************************************************************************/
+
+    
 })

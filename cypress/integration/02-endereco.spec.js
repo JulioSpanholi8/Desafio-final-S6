@@ -13,6 +13,9 @@ describe('Testes Front Mercado Online - CADASTRAO DE ENDERECOS', () => {
             MOCadastrarEnderecos.cadastroEndereco()
         })
     })
+
+    /****************************************************************************/
+
     describe('Testes cadastro de enderecos/Negativos', () => {
         beforeEach(() => {
             MOLogin.acessarMercadoOnline()  

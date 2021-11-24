@@ -6,20 +6,22 @@ const {fakerBr} = require('js-brasil')
 export default class autFixtures extends Base {
     static usuarioValido() {
       cy.writeFile('cypress/fixtures/cadastro_usuario/userValido.json', {
-          'valido' : {
-            "nome"      : `${fakerbr.name.firstName()} ${fakerbr.name.lastName()}`,
-            "nascimento": `${fakerBr.data()}`,
-            "cpf"       : `${fakerBr.cpf()}`,
-            "telefone"  : `${fakerBr.telefone()}`,
-            "celular"   : `${fakerBr.celular()}`,
-            "email"     : `${fakerbr.internet.email()}`,
-            "senha"     : `${faker.internet.password()}`
-          }
+        'valido' : 
+        {
+          "nome"      : `${fakerbr.name.firstName()} ${fakerbr.name.lastName()}`,
+          "nascimento": `${fakerBr.data()}`,
+          "cpf"       : `${fakerBr.cpf()}`,
+          "telefone"  : `${fakerBr.telefone()}`,
+          "celular"   : `${fakerBr.celular()}`,
+          "email"     : `${fakerbr.internet.email()}`,
+          "senha"     : `${faker.internet.password()}`
+        }
       })
     }
     static usuarioInvalido() {
       cy.writeFile('cypress/fixtures/cadastro_usuario/userInvalido.json',  {
-        'invalido' : {
+        'invalido' : 
+        {
           "nome"      : `${fakerbr.name.firstName()} ${fakerbr.name.lastName()}`,
           "nascimento": `${fakerBr.data()}`,
           "cpf"       : `${fakerBr.telefone()}`,
@@ -32,7 +34,8 @@ export default class autFixtures extends Base {
     }
     static numeroEndereco(){
       cy.writeFile('cypress/fixtures/cadastro_endereco/endereco.json',  {
-        'valido' : {
+        'valido' : 
+        {
           "cep"     : "30130-003",
           "numero"  : `${faker.datatype.number()}`
         }
