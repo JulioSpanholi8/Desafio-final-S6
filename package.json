@@ -6,9 +6,9 @@
   "scripts": {
     "cy:run": "cypress run",
     "cy:open": "cypress open --config watchForFileChanges=false",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "report:merge": "mochawesome-merge cypress/report/mochawesome-report/*.json > cypress/report/output.json",
-    "report:generate": "marge cypress/report/output.json --reportDir ./ --inline",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "report:generate": "marge cypress/report/output.json --reportDir ./ --inline"
   },
   "repository": {
     "type": "git",

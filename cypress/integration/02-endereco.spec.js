@@ -10,6 +10,7 @@ describe('Testes Front Mercado Online - CADASTRAO DE ENDERECOS', () => {
             MOLogin.realizarLogin() 
         })
         it('Deve adicionar um endereco com sucesso', () => {
+            MOCadastrarEnderecos.verificaEndereco()
             MOCadastrarEnderecos.cadastroEndereco()
         })
     })
@@ -22,6 +23,7 @@ describe('Testes Front Mercado Online - CADASTRAO DE ENDERECOS', () => {
             MOLogin.realizarLogin() 
         })
         it('Deve adicionar um endereco com cep invalido', () => {
+            MOCadastrarEnderecos.verificaEndereco()
             MOCadastrarEnderecos.cadastroEnderecoInvalido()
         })
     })
