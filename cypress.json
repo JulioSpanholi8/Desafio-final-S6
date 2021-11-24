@@ -1,3 +1,6 @@
 { 
-    "baseUrl" : "https://701523.commercesuite.com.br"
+    "baseUrl" : "https://701523.commercesuite.com.br",
+
+    "viewportWidth": 1520,
+    "viewportHeight": 880
 }
