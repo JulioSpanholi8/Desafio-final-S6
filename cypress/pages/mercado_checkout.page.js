@@ -3,7 +3,6 @@ import {CHECKOUT as CK} from './components/mercado_checkout.elements'
 import {MODAL} from './components/mercado_carrinho.elements'
 import fakerbr from "faker-br"
 
-const {fakerBr} = require('js-brasil')
 var selecionar
 
 export default class MOCheckout extends Base {

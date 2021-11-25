@@ -1,6 +1,6 @@
 export const ENDERECO = {
     MENU_CONTA          : '.app__navigation__item.app__link',
-    BTN_EDITAR          : '.app__button',
+    BTN_EDITAR          : '.app__button--no-margin',
     TXT_USER            : '.app__address-list__item__text__customer-name',
     FORM_NOMEENDERECO   : '#address-description',
     FORM_CEP            : '#address-cep',

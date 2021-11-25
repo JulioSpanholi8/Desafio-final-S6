@@ -16,7 +16,7 @@ describe('Testes Front Mercado Online - CADASTRO DE USUARIO', () => {
             MOCadastrarUsuario.realizarCadastroPessoaFisica()
             cy.wait(5000)
         })
-    })
+    }) 
 
     /****************************************************************************/
 

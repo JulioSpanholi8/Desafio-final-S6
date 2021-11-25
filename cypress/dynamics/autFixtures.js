@@ -31,7 +31,7 @@ export default class autFixtures extends Base {
           "senha"     : `${faker.internet.password()}` 
         }
       })
-    }
+    } 
     static numeroEndereco(){
       cy.writeFile('cypress/fixtures/cadastro_endereco/endereco.json',  {
         'valido' : 
