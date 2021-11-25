@@ -5,9 +5,9 @@
     "passes": 11,
     "pending": 0,
     "failures": 0,
-    "start": "2021-11-24T20:09:10.554Z",
-    "end": "2021-11-24T20:15:16.697Z",
-    "duration": 322559,
+    "start": "2021-11-25T18:54:23.585Z",
+    "end": "2021-11-25T18:58:47.583Z",
+    "duration": 227744,
     "testsRegistered": 11,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "b5bf8026-106c-4c07-8dbf-8e275f4ecca0",
+      "uuid": "fe6f129f-8979-43e1-b813-e1d5d1b37f09",
       "title": "",
       "fullFile": "cypress/integration/01-cdusuario.spec.js",
       "file": "cypress/integration/01-cdusuario.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "1d1afdc2-1fd2-4dc4-b17b-e58ca5eb3e3c",
+          "uuid": "4bcb9c84-d79b-4134-aad3-de6248fee3c5",
           "title": "Testes Front Mercado Online - CADASTRO DE USUARIO",
           "fullFile": "",
           "file": "",
@@ -36,7 +36,7 @@
           "tests": [],
           "suites": [
             {
-              "uuid": "54908f0c-af9d-4052-be13-16279062e5c6",
+              "uuid": "66aa01d5-f419-4184-8c10-0f11be03ec89",
               "title": "Testes cadastro de usuário/Positivos",
               "fullFile": "",
               "file": "",
@@ -47,17 +47,17 @@
                   "title": "Deve verificar se os campos para cadastro de pessoa física estão adequados",
                   "fullTitle": "Testes Front Mercado Online - CADASTRO DE USUARIO Testes cadastro de usuário/Positivos Deve verificar se os campos para cadastro de pessoa física estão adequados",
                   "timedOut": null,
-                  "duration": 47088,
+                  "duration": 9907,
                   "state": "passed",
-                  "speed": "slow",
+                  "speed": "medium",
                   "pass": true,
                   "fail": false,
                   "pending": false,
                   "context": null,
                   "code": "_mercado_cdusuario.default.verificarCadastroPessoaFisica();",
                   "err": {},
-                  "uuid": "24e38257-3f15-47eb-b407-90e616ac80ab",
-                  "parentUUID": "54908f0c-af9d-4052-be13-16279062e5c6",
+                  "uuid": "d5c017e1-a0a2-453d-9e67-dd81822fb3b4",
+                  "parentUUID": "66aa01d5-f419-4184-8c10-0f11be03ec89",
                   "isHook": false,
                   "skipped": false
                 },
@@ -65,7 +65,7 @@
                   "title": "Deve realizar o cadastro de uma pessoa física com sucesso",
                   "fullTitle": "Testes Front Mercado Online - CADASTRO DE USUARIO Testes cadastro de usuário/Positivos Deve realizar o cadastro de uma pessoa física com sucesso",
                   "timedOut": null,
-                  "duration": 48763,
+                  "duration": 28456,
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -74,27 +74,27 @@
                   "context": null,
                   "code": "_mercado_cdusuario.default.realizarCadastroPessoaFisica();\ncy.wait(5000);",
                   "err": {},
-                  "uuid": "bbaf93a6-5a28-4095-ab9e-ce6531c9783e",
-                  "parentUUID": "54908f0c-af9d-4052-be13-16279062e5c6",
+                  "uuid": "bf895d30-e93a-4559-939a-b047e23451b7",
+                  "parentUUID": "66aa01d5-f419-4184-8c10-0f11be03ec89",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "24e38257-3f15-47eb-b407-90e616ac80ab",
-                "bbaf93a6-5a28-4095-ab9e-ce6531c9783e"
+                "d5c017e1-a0a2-453d-9e67-dd81822fb3b4",
+                "bf895d30-e93a-4559-939a-b047e23451b7"
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
-              "duration": 95851,
+              "duration": 38363,
               "root": false,
               "rootEmpty": false,
               "_timeout": 2000
             },
             {
-              "uuid": "cd2faa4c-70d0-41d0-bf51-5b43e5269235",
+              "uuid": "9ab02840-19ee-417e-b437-2fed3313363f",
               "title": "Testes cadastro de usuário/Negativos",
               "fullFile": "",
               "file": "",
@@ -105,7 +105,7 @@
                   "title": "Deve realizar o cadastro de uma pessoa com cpf inválido",
                   "fullTitle": "Testes Front Mercado Online - CADASTRO DE USUARIO Testes cadastro de usuário/Negativos Deve realizar o cadastro de uma pessoa com cpf inválido",
                   "timedOut": null,
-                  "duration": 11626,
+                  "duration": 10982,
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -114,20 +114,20 @@
                   "context": null,
                   "code": "_mercado_cdusuario.default.campoCpfInvalido();",
                   "err": {},
-                  "uuid": "965efa20-360b-497c-a804-87c4b7e8bd1d",
-                  "parentUUID": "cd2faa4c-70d0-41d0-bf51-5b43e5269235",
+                  "uuid": "0b2b2ea0-25bd-4e6b-bf5d-c518454a25a4",
+                  "parentUUID": "9ab02840-19ee-417e-b437-2fed3313363f",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "965efa20-360b-497c-a804-87c4b7e8bd1d"
+                "0b2b2ea0-25bd-4e6b-bf5d-c518454a25a4"
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
-              "duration": 11626,
+              "duration": 10982,
               "root": false,
               "rootEmpty": false,
               "_timeout": 2000
@@ -153,7 +153,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "b07fa2b0-f609-487e-a244-4ff6cfc1228a",
+      "uuid": "0d785e67-7c79-40b8-8377-8fd5fd41f80e",
       "title": "",
       "fullFile": "cypress/integration/02-endereco.spec.js",
       "file": "cypress/integration/02-endereco.spec.js",
@@ -162,7 +162,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "bb711dd5-20f6-45a0-89d4-6d6c508cbcad",
+          "uuid": "697c12c0-d85a-442a-bf4d-097fdd707011",
           "title": "Testes Front Mercado Online - CADASTRAO DE ENDERECOS",
           "fullFile": "",
           "file": "",
@@ -171,7 +171,7 @@
           "tests": [],
           "suites": [
             {
-              "uuid": "614c6c9a-744e-403e-9ee7-b77283fe2288",
+              "uuid": "4d7a0d66-5d4d-4296-8a54-ea9ea3185ffa",
               "title": "Testes cadastro de enderecos/Positivos",
               "fullFile": "",
               "file": "",
@@ -182,7 +182,7 @@
                   "title": "Deve adicionar um endereco com sucesso",
                   "fullTitle": "Testes Front Mercado Online - CADASTRAO DE ENDERECOS Testes cadastro de enderecos/Positivos Deve adicionar um endereco com sucesso",
                   "timedOut": null,
-                  "duration": 29769,
+                  "duration": 29959,
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -191,26 +191,26 @@
                   "context": null,
                   "code": "_mercado_endereco.default.verificaEndereco();\n_mercado_endereco.default.cadastroEndereco();",
                   "err": {},
-                  "uuid": "d1992ea6-4321-4a2c-b33f-a4c8055ea90f",
-                  "parentUUID": "614c6c9a-744e-403e-9ee7-b77283fe2288",
+                  "uuid": "acff4e92-a6ae-4af0-9044-13287b89f42e",
+                  "parentUUID": "4d7a0d66-5d4d-4296-8a54-ea9ea3185ffa",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "d1992ea6-4321-4a2c-b33f-a4c8055ea90f"
+                "acff4e92-a6ae-4af0-9044-13287b89f42e"
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
-              "duration": 29769,
+              "duration": 29959,
               "root": false,
               "rootEmpty": false,
               "_timeout": 2000
             },
             {
-              "uuid": "544a5b72-c75f-4417-8fc2-aa09f1b7b8d7",
+              "uuid": "9c4a6590-3b43-464c-879a-221bf3ae07d8",
               "title": "Testes cadastro de enderecos/Negativos",
               "fullFile": "",
               "file": "",
@@ -221,7 +221,7 @@
                   "title": "Deve adicionar um endereco com cep invalido",
                   "fullTitle": "Testes Front Mercado Online - CADASTRAO DE ENDERECOS Testes cadastro de enderecos/Negativos Deve adicionar um endereco com cep invalido",
                   "timedOut": null,
-                  "duration": 24672,
+                  "duration": 27902,
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -230,20 +230,20 @@
                   "context": null,
                   "code": "_mercado_endereco.default.verificaEndereco();\n_mercado_endereco.default.cadastroEnderecoInvalido();",
                   "err": {},
-                  "uuid": "e4af624b-7635-4c17-b154-bbff8b5483d3",
-                  "parentUUID": "544a5b72-c75f-4417-8fc2-aa09f1b7b8d7",
+                  "uuid": "b7e216bf-1591-4131-8425-1972044d4470",
+                  "parentUUID": "9c4a6590-3b43-464c-879a-221bf3ae07d8",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "e4af624b-7635-4c17-b154-bbff8b5483d3"
+                "b7e216bf-1591-4131-8425-1972044d4470"
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
-              "duration": 24672,
+              "duration": 27902,
               "root": false,
               "rootEmpty": false,
               "_timeout": 2000
@@ -269,7 +269,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "ee18abfc-ddfc-42d1-aaa2-a36e2a29ff61",
+      "uuid": "360917fa-3bec-49a7-bbbb-35d1b15d1b60",
       "title": "",
       "fullFile": "cypress/integration/03-login.spec.js",
       "file": "cypress/integration/03-login.spec.js",
@@ -278,7 +278,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "d5b46c0d-5e7b-40ce-98d5-6592ec9460d8",
+          "uuid": "9cf14943-f176-4b95-854c-41a9ddc5b336",
           "title": "Testes Front Mercado Online - LOGIN",
           "fullFile": "",
           "file": "",
@@ -287,7 +287,7 @@
           "tests": [],
           "suites": [
             {
-              "uuid": "b5c6a9b2-2bf1-422a-9e16-fba372844b69",
+              "uuid": "725b1566-1f87-4384-82b4-d0a23c66beb4",
               "title": "Testes de login/Positivos",
               "fullFile": "",
               "file": "",
@@ -298,7 +298,7 @@
                   "title": "Deve realizar login no sistema com sucesso",
                   "fullTitle": "Testes Front Mercado Online - LOGIN Testes de login/Positivos Deve realizar login no sistema com sucesso",
                   "timedOut": null,
-                  "duration": 12231,
+                  "duration": 13034,
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -307,26 +307,26 @@
                   "context": null,
                   "code": "_mercado_login.default.verificarLogin();\n_mercado_login.default.realizarLogin();",
                   "err": {},
-                  "uuid": "2cf22555-b9ac-4738-b1b8-702d4df0dfce",
-                  "parentUUID": "b5c6a9b2-2bf1-422a-9e16-fba372844b69",
+                  "uuid": "750d043b-e658-4870-8506-ce3a05af8169",
+                  "parentUUID": "725b1566-1f87-4384-82b4-d0a23c66beb4",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "2cf22555-b9ac-4738-b1b8-702d4df0dfce"
+                "750d043b-e658-4870-8506-ce3a05af8169"
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
-              "duration": 12231,
+              "duration": 13034,
               "root": false,
               "rootEmpty": false,
               "_timeout": 2000
             },
             {
-              "uuid": "d7525f87-0f04-454b-a83d-8cc1f48344c4",
+              "uuid": "b58e9d06-b41e-42e3-a31b-10a7236de816",
               "title": "Testes de login/Negativos",
               "fullFile": "",
               "file": "",
@@ -337,7 +337,7 @@
                   "title": "Deve realizar login no sistema com usuário inexistente",
                   "fullTitle": "Testes Front Mercado Online - LOGIN Testes de login/Negativos Deve realizar login no sistema com usuário inexistente",
                   "timedOut": null,
-                  "duration": 10323,
+                  "duration": 10101,
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -346,20 +346,20 @@
                   "context": null,
                   "code": "_mercado_login.default.falhaLogin();",
                   "err": {},
-                  "uuid": "3ff8401d-014e-48e7-8372-f9ef9b8541b2",
-                  "parentUUID": "d7525f87-0f04-454b-a83d-8cc1f48344c4",
+                  "uuid": "250b1ef3-c160-424d-9efb-5fef42dd5fe8",
+                  "parentUUID": "b58e9d06-b41e-42e3-a31b-10a7236de816",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "3ff8401d-014e-48e7-8372-f9ef9b8541b2"
+                "250b1ef3-c160-424d-9efb-5fef42dd5fe8"
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
-              "duration": 10323,
+              "duration": 10101,
               "root": false,
               "rootEmpty": false,
               "_timeout": 2000
@@ -385,7 +385,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "7bf3dea7-5de5-4fe7-aaa0-a248098b61e0",
+      "uuid": "91e2c9ca-3abf-4c11-ae31-1aff3ee44788",
       "title": "",
       "fullFile": "cypress/integration/04-carrinho.spec.js",
       "file": "cypress/integration/04-carrinho.spec.js",
@@ -394,7 +394,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "5a8a7a56-da7e-4efd-8098-ca8aad61274f",
+          "uuid": "e02e9dbd-9fe7-4f39-9590-88fb6a5113e6",
           "title": "Testes Front Mercado Online - CARRINHO",
           "fullFile": "",
           "file": "",
@@ -403,7 +403,7 @@
           "tests": [],
           "suites": [
             {
-              "uuid": "2d9a7ada-5810-44cb-8e90-aaafe76f2880",
+              "uuid": "158f5665-2df6-48f4-957d-ce7d3c3a8898",
               "title": "Testes de carrinho/Positivos",
               "fullFile": "",
               "file": "",
@@ -414,7 +414,7 @@
                   "title": "Deve adicionar itens ao carrinho e realizar validações no modal e na página do carrinho com sucesso",
                   "fullTitle": "Testes Front Mercado Online - CARRINHO Testes de carrinho/Positivos Deve adicionar itens ao carrinho e realizar validações no modal e na página do carrinho com sucesso",
                   "timedOut": null,
-                  "duration": 33797,
+                  "duration": 21188,
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -423,26 +423,26 @@
                   "context": null,
                   "code": "_mercado_carrinho.default.adicionarItemCarrinho();\n_mercado_carrinho.default.modalCarrinho();\n_mercado_carrinho.default.paginaCarrinho();",
                   "err": {},
-                  "uuid": "29bcfee2-16a9-40a5-82ac-66a2f60180a9",
-                  "parentUUID": "2d9a7ada-5810-44cb-8e90-aaafe76f2880",
+                  "uuid": "e569d70c-702b-4b5c-bf0f-e8120ecce0c2",
+                  "parentUUID": "158f5665-2df6-48f4-957d-ce7d3c3a8898",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "29bcfee2-16a9-40a5-82ac-66a2f60180a9"
+                "e569d70c-702b-4b5c-bf0f-e8120ecce0c2"
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
-              "duration": 33797,
+              "duration": 21188,
               "root": false,
               "rootEmpty": false,
               "_timeout": 2000
             },
             {
-              "uuid": "0e71eef6-b006-4cb6-8391-c8b85d7a69eb",
+              "uuid": "5d34b578-1a2d-4aa0-9e9c-27f4a5443a10",
               "title": "Testes de carrinho/Negativos",
               "fullFile": "",
               "file": "",
@@ -453,7 +453,7 @@
                   "title": "Deve adicionar itens ao carrinho e inserir um CEP inválido no frete",
                   "fullTitle": "Testes Front Mercado Online - CARRINHO Testes de carrinho/Negativos Deve adicionar itens ao carrinho e inserir um CEP inválido no frete",
                   "timedOut": null,
-                  "duration": 24422,
+                  "duration": 17792,
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -462,20 +462,20 @@
                   "context": null,
                   "code": "_mercado_carrinho.default.compraCepInvalido();",
                   "err": {},
-                  "uuid": "1cc90ff2-b149-42b5-86af-0fdc1f759547",
-                  "parentUUID": "0e71eef6-b006-4cb6-8391-c8b85d7a69eb",
+                  "uuid": "af6b40cf-f5f1-45a1-9273-d00705c03180",
+                  "parentUUID": "5d34b578-1a2d-4aa0-9e9c-27f4a5443a10",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "1cc90ff2-b149-42b5-86af-0fdc1f759547"
+                "af6b40cf-f5f1-45a1-9273-d00705c03180"
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
-              "duration": 24422,
+              "duration": 17792,
               "root": false,
               "rootEmpty": false,
               "_timeout": 2000
@@ -501,7 +501,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "aa109205-2bdf-4c3e-a2ea-da399b77d28c",
+      "uuid": "24e9884e-eb2c-43f6-b1f0-301689691ba6",
       "title": "",
       "fullFile": "cypress/integration/05-checkout.spec.js",
       "file": "cypress/integration/05-checkout.spec.js",
@@ -510,7 +510,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "346cc82c-7721-42cf-b583-fc8a136ad5d6",
+          "uuid": "109299d3-2e1e-4b7b-b57a-2235361d2e84",
           "title": "Testes Front Mercado Online - CHECKOUT",
           "fullFile": "",
           "file": "",
@@ -519,7 +519,7 @@
           "tests": [],
           "suites": [
             {
-              "uuid": "f19448b9-8b4e-4096-8f81-5a3469e3d93c",
+              "uuid": "e3f96a3d-0e98-470c-b3d4-5752836d1694",
               "title": "Testes de checkout/Positivos",
               "fullFile": "",
               "file": "",
@@ -530,7 +530,7 @@
                   "title": "Deve adicionar itens ao carrinho e realizar checkout com sucesso",
                   "fullTitle": "Testes Front Mercado Online - CHECKOUT Testes de checkout/Positivos Deve adicionar itens ao carrinho e realizar checkout com sucesso",
                   "timedOut": null,
-                  "duration": 42605,
+                  "duration": 33036,
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -539,26 +539,26 @@
                   "context": null,
                   "code": "_mercado_checkout.default.finalizarCompra();\n_mercado_checkout.default.realizarCheckout();",
                   "err": {},
-                  "uuid": "a56ea6c2-30de-4f79-beab-e99a36581691",
-                  "parentUUID": "f19448b9-8b4e-4096-8f81-5a3469e3d93c",
+                  "uuid": "93ada7dd-9e80-4696-8bf9-08349b43adca",
+                  "parentUUID": "e3f96a3d-0e98-470c-b3d4-5752836d1694",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "a56ea6c2-30de-4f79-beab-e99a36581691"
+                "93ada7dd-9e80-4696-8bf9-08349b43adca"
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
-              "duration": 42605,
+              "duration": 33036,
               "root": false,
               "rootEmpty": false,
               "_timeout": 2000
             },
             {
-              "uuid": "b414c673-dccf-433d-a95e-800efb1365f9",
+              "uuid": "059dc2ac-8a68-431f-bbee-52b7afce0ddf",
               "title": "Testes de checkout/Negativos",
               "fullFile": "",
               "file": "",
@@ -569,7 +569,7 @@
                   "title": "Deve adicionar itens ao carrinho e inserir email inexistente no checkout",
                   "fullTitle": "Testes Front Mercado Online - CHECKOUT Testes de checkout/Negativos Deve adicionar itens ao carrinho e inserir email inexistente no checkout",
                   "timedOut": null,
-                  "duration": 37263,
+                  "duration": 25387,
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
@@ -578,20 +578,20 @@
                   "context": null,
                   "code": "_mercado_checkout.default.emailInexistente();",
                   "err": {},
-                  "uuid": "497b1d27-0f3a-4620-9648-8318eee06fb0",
-                  "parentUUID": "b414c673-dccf-433d-a95e-800efb1365f9",
+                  "uuid": "2527ca0f-ee8f-4f1f-82e2-22197fbef0e9",
+                  "parentUUID": "059dc2ac-8a68-431f-bbee-52b7afce0ddf",
                   "isHook": false,
                   "skipped": false
                 }
               ],
               "suites": [],
               "passes": [
-                "497b1d27-0f3a-4620-9648-8318eee06fb0"
+                "2527ca0f-ee8f-4f1f-82e2-22197fbef0e9"
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
-              "duration": 37263,
+              "duration": 25387,
               "root": false,
               "rootEmpty": false,
               "_timeout": 2000
